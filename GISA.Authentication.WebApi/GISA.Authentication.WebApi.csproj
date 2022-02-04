@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+   <ItemGroup>
+    <ProjectReference Include="..\GISA.Authentication.Application\GISA.Authentication.Application.csproj" />
+    <ProjectReference Include="..\GISA.Authentication.Infra.IoC\GISA.Authentication.Infra.IoC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+     <NoWarn>$(NoWarn);1591</NoWarn>
+     <UserSecretsId>c1859f62-5882-4b60-af1f-5abfe617551f</UserSecretsId>
+     <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+
+</Project>
